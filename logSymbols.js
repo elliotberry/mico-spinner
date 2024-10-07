@@ -1,4 +1,4 @@
-const isUnicodeSupported = require('./isUnicodeSupported')
+import isUnicodeSupported from './is-unicode-supported';
 
 const main = {
   info: 'ℹ',
@@ -16,4 +16,4 @@ const fallback = {
 
 const logSymbols = isUnicodeSupported() ? main : fallback
 
-module.exports = logSymbols
+export default logSymbols;

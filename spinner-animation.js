@@ -1,4 +1,4 @@
-const isUnicodeSupported = require('./isUnicodeSupported')
+import isUnicodeSupported from './is-unicode-supported.js';
 
 const dots =  ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
 
@@ -6,4 +6,4 @@ const line = ['-', '\\', '|', '/']
 
 const animation = isUnicodeSupported() ? dots : line
 
-module.exports = animation
+export default animation;

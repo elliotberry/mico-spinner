@@ -1,4 +1,4 @@
-const process = require('process')
+import process from 'node:process';
 
 function isInteractive({ stream = process.stdout } = {}) {
   return Boolean(
@@ -8,4 +8,4 @@ function isInteractive({ stream = process.stdout } = {}) {
       !('CI' in process.env)
   )
 }
-module.exports = function () { return isInteractive(); };
+export default function () { return isInteractive(); };

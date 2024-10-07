@@ -1,4 +1,4 @@
-exports.show = (writableStream = process.stderr) => {
+export function show(writableStream = process.stderr) {
   if (!writableStream.isTTY) {
     return
   }
@@ -6,7 +6,7 @@ exports.show = (writableStream = process.stderr) => {
   writableStream.write('\u001B[?25h')
 }
 
-exports.hide = (writableStream = process.stderr) => {
+export function hide(writableStream = process.stderr) {
   if (!writableStream.isTTY) {
     return
   }

@@ -1,10 +1,10 @@
-const isInteractive = require('./isInteractive')
-const Spinner = require('./spinner')
-const PlainSpinner = require('./plainSpinner')
+import isInteractive from './is-interactive.js';
+import Spinner from './spinner.js';
+import PlainSpinner from './plain-spinner.js';
 
-const spinnerFactory = function (...options) {
+const spinnerFactory = (...options) => {
   let SpinnerFunction = isInteractive() ? Spinner : PlainSpinner
   return new SpinnerFunction(...options)
 }
 
-module.exports = spinnerFactory
+export default spinnerFactory;

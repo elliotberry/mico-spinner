@@ -1,10 +1,9 @@
-const process = require('process')
-const readline = require('readline')
-const c = require('picocolors')
-
-const spinnersList = require('./spinnerAnimation')
-const logSymbols = require('./logSymbols')
-const { show: showCursor, hide: hideCursor } = require('./cursor')
+import process from 'process';
+import readline from 'readline';
+import c from 'picocolors';
+import spinnersList from './spinner-animation.js';
+import logSymbols from './log-symbols.js';
+import {show as showCursor, hide as hideCursor} from './cursor.js';
 
 function Spinner(textStr = '', opts = {}) {
   let text = textStr
@@ -67,4 +66,4 @@ function Spinner(textStr = '', opts = {}) {
   }
 }
 
-module.exports = Spinner
+export default Spinner;

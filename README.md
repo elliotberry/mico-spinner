@@ -1,12 +1,6 @@
 # mico-spinner
 
-<img src="./terminal-screenshot.svg" alt="screenshot">
-
-
-Minimalistic spinner for Node.js.
-
-* Only single dependency ([Pico Colors](https://github.com/alexeyraspopov/picocolors)) without sub-dependencies. In contrast, `ora` has [30 sub-dependencies](https://npm.anvaka.com/#/view/2d/ora).
-* Detects Unicode and color support in terminal.
+whoever made ora can fight me, 1v1 cage match slaps to the knees allowed
 
 ## Usage
 
@@ -22,6 +16,3 @@ try {
   console.error(e.stack)
 }
 ```
-
-### Similar projects
-- [Nano Spinner](https://github.com/usmanyunusov/nanospinner)

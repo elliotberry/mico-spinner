@@ -12,4 +12,4 @@ function isUnicodeSupported() {
   )
 }
 
-module.exports = function () { return isUnicodeSupported(); };
+export default function IUS() { return isUnicodeSupported(); };
